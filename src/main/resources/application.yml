@@ -1,4 +1,4 @@
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://admin:${DB_PASSWORD}@clusterfree.zz986be.mongodb.net/${DB_DATABASE}?retryWrites=true&w=majority
+      uri: mongodb+srv://admin:${DB_PASSWORD}@clusterfree.zz986be.mongodb.net/${DB_NAME}?retryWrites=true&w=majority
