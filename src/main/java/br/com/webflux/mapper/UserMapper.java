@@ -5,7 +5,12 @@ import br.com.webflux.model.response.UserRequest;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-@Mapper(componentModel = "spring")
+import static org.mapstruct.NullValueCheckStrategy.ALWAYS;
+
+@Mapper(
+        componentModel = "spring",
+        nullValueCheckStrategy = ALWAYS
+)
 public interface UserMapper {
 
     @Mapping(target = "id", ignore = true)
